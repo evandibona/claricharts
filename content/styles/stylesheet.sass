@@ -1,0 +1,38 @@
+
+
+// Mixin // Class // Traits
+// For header, footer, and the in between. 
+@import normalize.scss
+=page-section
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  padding: 1%
+//
+
+*
+  a 
+    text-decoration: none
+
+body
+  background: #fffbf3
+  font-size: 15
+  font-family: georgia, sans
+
+
+  header
+    +page-section
+    background: #b8473e
+    color: #361312
+    height: 24em
+    a 
+      font-style: bold
+      color: white
+  footer
+    +page-section
+    background: #2E3233
+    color: white
+    height: 10em
+  .post
+    +page-section
+
