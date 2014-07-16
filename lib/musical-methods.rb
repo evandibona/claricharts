@@ -21,7 +21,7 @@ class String
       bend = "\u266D"
     when 'n'
       bend = ""
-    when '#'
+    when 's'
       bend = "\u266F"
     end
     return letter + ' ' + bend 

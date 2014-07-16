@@ -25,7 +25,7 @@ class Clarinet
       "f-n-0" => { fingers: [[ :t, :uno, :due, :tre, :quattro, :cinque, :sei, :rp_4 ], [], [] ], 
                    octave: 3, 
                  }, 
-      "f-#-0.g-b-0" => { fingers: [[ :t, :uno, :due, :tre, :quattro, :cinque, :sei, :rp_4, :lp_3 ], [], [] ], 
+      "f-s-0.g-b-0" => { fingers: [[ :t, :uno, :due, :tre, :quattro, :cinque, :sei, :rp_4, :lp_3 ], [], [] ], 
                    octave: 3, 
                  }, 
       "g-n-0" => { fingers: [[ :t, :uno, :due, :tre, :quattro, :cinque, :sei ], [], [] ], 

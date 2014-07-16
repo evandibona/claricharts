@@ -19,7 +19,11 @@ end
 
 route '*' do
   if item.binary? 
-    item.identifier.chop + '.' + item[:extension]
+    if item.identifier.include? '/images/keys/'
+      nil
+    else
+      item.identifier.chop + '.' + item[:extension]
+    end
   else
     case item.identifier
     when '/'
