@@ -3,12 +3,13 @@
 // Mixin // Class // Traits
 // For header, footer, and the in between. 
 @import normalize.scss
+@import notes.sass
 =page-section
-  width: 100%
-  margin-left: auto
-  margin-right: auto
-  padding: 1%
-//
+  padding-top: 1%
+  padding-bottom: 1%
+  padding-left: 2% 
+  padding-right: 2% 
+  overlap-x: hidden 
 
 *
   a 
@@ -18,7 +19,10 @@ body
   background: #fffbf3
   font-size: 15
   font-family: georgia, sans
-
+  width: 100%
+  text-align: center
+  margin-left: auto
+  margin-right: auto
 
   header
     +page-section
@@ -28,6 +32,8 @@ body
     a 
       font-style: bold
       color: white
+    li
+      float: left
   footer
     +page-section
     background: #2E3233
