@@ -22,11 +22,10 @@ def generate_fingerings(keys_in, charts_out)
   png = '.png' 
   keys_dir = keys_in
   fingerings_dir = charts_out
-  base = ChunkyPNG::Image.from_file(keys_dir + "base.png") 
   
   Clarinet.notes.each do |note, info| 
     puts "Building #{note}..." 
-    note_img = base
+    note_img = ChunkyPNG::Image.from_file(keys_dir + "base.png") 
     fingering = info[:fingers][0] 
     fingering.each do |key| 
       key_img_file = keys_dir + key.to_s + png

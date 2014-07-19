@@ -21,6 +21,8 @@ route '*' do
   if item.binary? 
     if item.identifier.include? '/images/keys/'
       nil
+    elsif item.identifier.include? '/fonts/' 
+      item.identifier.gsub(/_/, '.').chomp('/')
     else
       item.identifier.chop + '.' + item[:extension]
     end

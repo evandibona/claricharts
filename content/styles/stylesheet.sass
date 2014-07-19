@@ -1,9 +1,10 @@
-
-
 // Mixin // Class // Traits
 // For header, footer, and the in between. 
 @import normalize.scss
+@import junction.scss 
 @import notes.sass
+@import color-profile.sass
+
 =page-section
   padding-top: 1%
   padding-bottom: 1%
@@ -12,13 +13,11 @@
   overlap-x: hidden 
 
 *
-  a 
-    text-decoration: none
 
 body
-  background: #fffbf3
+  background: $bg
   font-size: 15
-  font-family: georgia, sans
+  font-family: "Junction"
   width: 100%
   text-align: center
   margin-left: auto
@@ -26,19 +25,36 @@ body
 
   header
     +page-section
-    background: #b8473e
-    color: #361312
-    height: 24em
+    background: $home
+    color: white
+    font-weight: regular
+    height: 34em
+    font-align: center
     a 
       font-style: bold
       color: white
     li
       float: left
+    h1
+      font-weight: normal
+      font-size: 10em
+      color: white
+      margin: 0
+    h2
+      font-weight: lighter
+      font-size: 10em
+      color: lighten($home, 12%) 
+      margin: 0
   footer
     +page-section
     background: #2E3233
     color: white
     height: 10em
+    a 
+      text-decoration: none
+      padding: 0.2em 1em
+      border-bottom: 3px solid $home
+      color: white
   .post
     +page-section
 

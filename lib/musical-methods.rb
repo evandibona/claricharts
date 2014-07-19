@@ -17,15 +17,14 @@ class String
       octave = pieces[2] 
     end
     case bend
-    when 'b'
+    when 'f'
       bend = "\u266D"
     when 'n'
       bend = ""
     when 's'
       bend = "\u266F"
     end
-    return letter + ' ' + bend 
-    # Eventually this should return some form of markup. 
+    return letter + bend 
   end
 end
   
