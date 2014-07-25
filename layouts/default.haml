@@ -3,15 +3,18 @@
 %head
   %meta{ charset: "utf-8" } 
   %meta{ name: "viewport", content: "width=device-width; initial-scale = 1.0, user-scalable = no" } 
-  %title Fingering, Scales, More
+  %title Clarinet Fingering Charts
   %link{ href:"/images/favicon.ico", rel: "icon", type: "image/x-icon" } 
   %link{ href:"/styles/stylesheet.css", media: "all", rel: "stylesheet", type: "text/css" } 
   = @items["/tracker/"].compiled_content
 
+  %script{ src: "/js/vexflow-min.js" } 
+
+  %script{ src: "http://code.jquery.com/jquery-2.1.1.min.js" } 
+
 %body
   %header
     %h2 Clarinet Charts
-    %h1 Scroll down for fingerings. 
   = yield
   %footer
     %p

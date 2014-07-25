@@ -12,8 +12,6 @@
   padding-right: 2% 
   overlap-x: hidden 
 
-*
-
 body
   background: $bg
   font-size: 15
@@ -28,8 +26,8 @@ body
     background: $home
     color: white
     font-weight: regular
-    height: 34em
-    font-align: center
+    height: 14em
+    text-align: center
     a 
       font-style: bold
       color: white
@@ -37,17 +35,19 @@ body
       float: left
     h1
       font-weight: normal
-      font-size: 10em
+      font-size: 5em
       color: white
       margin: 0
     h2
       font-weight: lighter
-      font-size: 10em
+      font-size: 4em
       color: lighten($home, 12%) 
       margin: 0
+  canvas
+    background: lighten($bg, 30%) 
   footer
     +page-section
-    background: #2E3233
+    background: #606060 
     color: white
     height: 10em
     a 

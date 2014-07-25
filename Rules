@@ -27,11 +27,15 @@ route '*' do
       item.identifier.chop + '.' + item[:extension]
     end
   else
-    case item.identifier
-    when '/'
-      "/index.html" 
-    when '/styles/stylesheet/'
-      "/styles/stylesheet.css" 
+    if item.identifier.include? '/js/' 
+      item.identifier.chop + '.js' 
+    else
+      case item.identifier 
+      when '/'
+        '/index.html' 
+      when '/styles/stylesheet/'
+        '/styles/stylesheet.css' 
+      end
     end
   end
 end

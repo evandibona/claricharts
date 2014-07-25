@@ -11,3 +11,15 @@
   %div{ class: "n-lower" } 
     %div{ class: "n-lower-left" } 
     %div{ class: "n-lower-right" } 
+      %canvas{ id: raw_note_name + "-canvas" } 
+      %script
+        = "var canvas = $(\"#{ '#' + raw_note_name + "-canvas" }\")[0]; "
+
+        var renderer = new Vex.Flow.Renderer(canvas,
+        Vex.Flow.Renderer.Backends.CANVAS);
+
+        var ctx = renderer.getContext();
+        var stave = new Vex.Flow.Stave(10, 0, 500);
+        stave.addClef("treble").setContext(ctx).draw();
+
+

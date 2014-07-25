@@ -26,6 +26,13 @@ class String
     end
     return letter + bend 
   end
+  def first_note
+    if self.include? '.'
+      return self.split('.')[0] 
+    else
+      return self
+    end
+  end
 end
   
 
